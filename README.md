@@ -21,7 +21,7 @@ Start JBoss Enterprise Application Platform 6 or JBoss AS 7 with the Web Profile
         For Windows: JBOSS_HOME\bin\standalone.bat
 
 
-Build and Deploy the EAR
+Build and Deploy the WAR
 -------------------------
 
 1. Make sure you have started the JBoss Server as described above.
@@ -75,7 +75,7 @@ You should see messages similar to the following:
 
     5438d65e-16fb-4f27-bf46-e15658e330c5
 
-Structure of the EAR
+Structure of the WAR
 --------------------
 
 jboss-resource-war.war
