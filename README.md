@@ -75,6 +75,16 @@ You should see messages similar to the following:
 
     5438d65e-16fb-4f27-bf46-e15658e330c5
 
+JBoss Server Console Output
+--------------------
+
+    21:46:36,963 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-14) JBAS015876: Starting deployment of "jboss-resource-war.war"
+    21:46:37,177 INFO  [org.jboss.web] (MSC service thread 1-9) JBAS018210: Registering web context: /jboss-resource-war
+    21:46:37,204 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS018559: Deployed "jboss-resource-war.war"
+    21:47:03,838 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (http--127.0.0.1-8080-1) Deploying javax.ws.rs.core.Application: class com.aruld.resources.MyApplication
+    21:47:04,097 INFO  [stdout] (http--127.0.0.1-8080-1) Received request from # aruld
+    21:47:04,098 INFO  [stdout] (http--127.0.0.1-8080-1) XOP # Hello Xop World!
+
 Structure of the WAR
 --------------------
 
