@@ -11,9 +11,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-client:1.13" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-core:1.13" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.jersey.contribs:jersey-multipart:1.13" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-client:1.17" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-core:1.17" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey.contribs:jersey-multipart:1.17" level="project" />
     <orderEntry type="library" name="Maven: org.jvnet:mimepull:1.6" level="project" />
   </component>
 </module>
