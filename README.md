@@ -1,4 +1,4 @@
-jersey-client-resteasy-resource: Resteasy JAX-RS XOP Multipart Example Deployed as WAR in JBoss 7
+Resteasy JAX-RS XOP Multipart Example Deployed as WAR in JBoss 7 with Jersey Client
 =====================================================================
 
 Based on the template from https://github.com/jboss-jdf/jboss-as-quickstart/tree/jdf-2.0.0.Final/kitchensink-ear
@@ -80,10 +80,10 @@ Structure of the EAR
 
 jersey-jboss-ear-web-1.0-SNAPSHOT.war
 -------------------------------------
-     0 Sat Jan 19 20:51:10 HST 2013 META-INF/
-   123 Sat Jan 19 20:51:08 HST 2013 META-INF/MANIFEST.MF
-     0 Sat Jan 19 20:51:08 HST 2013 WEB-INF/
-     0 Sat Jan 19 20:51:08 HST 2013 WEB-INF/classes/
-     0 Sat Jan 19 20:51:08 HST 2013 WEB-INF/lib/
-  5197 Sat Jan 19 20:51:08 HST 2013 WEB-INF/lib/jboss-resource-war-1.0-SNAPSHOT.jar
-   253 Sat Jan 19 18:59:20 HST 2013 WEB-INF/web.xml
+         0 Sat Jan 19 20:51:10 HST 2013 META-INF/
+       123 Sat Jan 19 20:51:08 HST 2013 META-INF/MANIFEST.MF
+         0 Sat Jan 19 20:51:08 HST 2013 WEB-INF/
+         0 Sat Jan 19 20:51:08 HST 2013 WEB-INF/classes/
+         0 Sat Jan 19 20:51:08 HST 2013 WEB-INF/lib/
+      5197 Sat Jan 19 20:51:08 HST 2013 WEB-INF/lib/jboss-resource-war-1.0-SNAPSHOT.jar
+       253 Sat Jan 19 18:59:20 HST 2013 WEB-INF/web.xml
