@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>jersey-client-jboss-resource</artifactId>
+        <groupId>jersey-client-jboss-resource</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>jboss-resource-war</artifactId>
+    <packaging>war</packaging>
+
+    <dependencies>
+        <!-- Import the JAX-RS API, we use provided scope as the API is included in JBoss AS 7 -->
+        <dependency>
+            <groupId>org.jboss.spec.javax.ws.rs</groupId>
+            <artifactId>jboss-jaxrs-api_1.1_spec</artifactId>
+            <version>1.0.0.Final</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jaxrs</artifactId>
+            <version>2.3.5.Final</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-multipart-provider</artifactId>
+            <version>2.3.5.Final</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jaxb-provider</artifactId>
+            <version>2.3.5.Final</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>jboss</id>
+            <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
+
+    <build>
+        <finalName>jboss-resource-war</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>make-a-jar</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${version.war.plugin}</version>
+                <configuration>
+                    <archiveClasses>true</archiveClasses>
+                </configuration>
+            </plugin>
+            <!-- The JBoss AS plugin deploys your ear to a local JBoss AS container -->
+            <!-- Due to Maven's lack of intelligence with EARs we need to configure
+                the jboss-as maven plugin to skip deployment for all modules. We then enable
+                it specifically in the ear module. -->
+            <plugin>
+                <groupId>org.jboss.as.plugins</groupId>
+                <artifactId>jboss-as-maven-plugin</artifactId>
+                <configuration>
+                    <skip>false</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>
