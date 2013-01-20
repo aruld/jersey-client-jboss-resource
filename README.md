@@ -78,8 +78,8 @@ You should see messages similar to the following:
 Structure of the EAR
 --------------------
 
-jersey-jboss-ear-web-1.0-SNAPSHOT.war
--------------------------------------
+jboss-resource-war.war
+----------------------
          0 Sat Jan 19 20:51:10 HST 2013 META-INF/
        123 Sat Jan 19 20:51:08 HST 2013 META-INF/MANIFEST.MF
          0 Sat Jan 19 20:51:08 HST 2013 WEB-INF/
