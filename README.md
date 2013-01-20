@@ -52,28 +52,28 @@ Jersey Client Console Output
 ---------------------
 You should see messages similar to the following:
 
-    Jan 19, 2013 8:49:42 PM com.sun.jersey.api.client.filter.LoggingFilter log
+    Jan 19, 2013 9:47:03 PM com.sun.jersey.api.client.filter.LoggingFilter log
     INFO: 1 * Client out-bound request
     1 > POST http://localhost:8080/jboss-resource-war/xop/user/aruld
     1 > Content-Type: multipart/related
-    --Boundary_1_798212303_1358664582457
+    --Boundary_1_1121984713_1358668023615
     Content-Type: application/xml
 
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?><item><username>aruld</username><image>SGVsbG8gWG9wIFdvcmxkIQ==</image></item>
-    --Boundary_1_798212303_1358664582457--
+    --Boundary_1_1121984713_1358668023615--
 
 
-    Jan 19, 2013 8:49:42 PM com.sun.jersey.api.client.filter.LoggingFilter log
+    Jan 19, 2013 9:47:04 PM com.sun.jersey.api.client.filter.LoggingFilter log
     INFO: 1 * Client in-bound response
     1 < 200
-    1 < Date: Sun, 20 Jan 2013 06:49:42 GMT
+    1 < Date: Sun, 20 Jan 2013 07:47:03 GMT
     1 < Content-Length: 123
     1 < Content-Type: application/xml
     1 < Server: Apache-Coyote/1.1
     1 <
-    <?xml version="1.0" encoding="UTF-8" standalone="yes"?><userInfo><uid>5438d65e-16fb-4f27-bf46-e15658e330c5</uid></userInfo>
+    <?xml version="1.0" encoding="UTF-8" standalone="yes"?><userInfo><uid>036f3a8b-87bd-4bad-b36b-7f7a5edc650b</uid></userInfo>
 
-    5438d65e-16fb-4f27-bf46-e15658e330c5
+    036f3a8b-87bd-4bad-b36b-7f7a5edc650b
 
 JBoss Server Console Output
 --------------------
